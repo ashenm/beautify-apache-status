@@ -1,0 +1,19 @@
+{
+
+  "version": "1.0.0",
+  "name": "BeautifyApacheStatus",
+  "description": "An Apache built-in Server Status Page Beautifier",
+
+  "author": "Ashen Gunaratne <mail@ashenm.ml>",
+  "homepage": "https://github.com/ashenm/beautify-apache-status",
+
+  "dependencies": {
+    "puppeteer": "1.x"
+  },
+
+  "devDependencies": {
+    "eslint": "5.x",
+    "uglify-js": "3.x"
+  }
+
+}
