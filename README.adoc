@@ -1,0 +1,21 @@
+= BeautifyApacheStatus
+====== An Apache built-in Server Status Page Beautifier
+link:https://travis-ci.org/ashenm/beautify-apache-status.svg?branch=master[Build Status, link=https://travis-ci.org/ashenm/beautify-apache-status]
+
+image::docs/img/after.png[Apache status page after BeautifyApacheStatus has been applied, align=center]
+
+=== USAGE
+
+[source, apache]
+----
+<Location /status>
+
+  ...
+
+  SetHandler server-status
+  Substitute 's|</head>|<script src="https://ashenm.github.io/beautify-apache-status/beautify-apache-status.min.js" type="text/javascript"></script></head>|'
+
+  ...
+
+</Location>
+----
